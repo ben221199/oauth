@@ -6,6 +6,10 @@ TODO
 
 ## Token Endpoint
 
+Method: `POST`
+
+*(All parameters in this section will be in the request body)*
+
 ### Grant Type - Authorization Code
 
 | Parameter | Required for confidential | Required for public | Value |
@@ -17,7 +21,9 @@ TODO
 
 🟠 Only when also used on [Authorization Endpoint](authorization-endpoint).
 
-#### Authentication 
+#### Authentication
+
+Parameters must be in the request body or as username-password pair in a HTTP Basic Authorization header.
 
 | Parameter | Required for confidential | Required for public |
 | - | - | - |
@@ -33,7 +39,9 @@ TODO
 | `password` | ✔️ | ✔️ | The password |
 | `scope` | ❌ | ❌ | The scope |
 
-#### Authentication 
+#### Authentication
+
+Parameters must be in the request body or as username-password pair in a HTTP Basic Authorization header.
 
 | Parameter | Required for confidential | Required for public |
 | - | - | - |
@@ -47,7 +55,14 @@ TODO
 | `grant_type` | ✔️ | ✔️ | `client_credentials` |
 | `scope` | ❌ | ❌ | The scope |
 
-*Note: Always client authentication*
+#### Authentication
+
+Parameters must be in the request body or as username-password pair in a HTTP Basic Authorization header.
+
+| Parameter | Required for confidential | Required for public |
+| - | - | - |
+| `client_id` | ✔️ | See confidential |
+| `client_secret` | ✔️ | See confidential |
 
 ### Grant Type - Refresh Token
 
@@ -56,7 +71,9 @@ TODO
 | `grant_type` | ✔️ | ✔️ | `refresh_token` |
 | `scope` | ❌ | ❌ | The scope |
 
-#### Authentication 
+#### Authentication
+
+Parameters must be in the request body or as username-password pair in a HTTP Basic Authorization header.
 
 | Parameter | Required for confidential | Required for public |
 | - | - | - |
