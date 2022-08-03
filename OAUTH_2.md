@@ -2,7 +2,33 @@
 
 ## Authorization Endpoint
 
-TODO
+Method: `GET`
+
+*(All parameters in this section will be in the request URL)*
+
+### Response Type - Code
+
+| Parameter | Required | Value |
+| - | - | - |
+| `response_type` | ✔️ | `code` |
+| `client_id` | ✔️ | The client ID |
+| `redirect_uri` | ❌ | The redirect URI |
+| `scope` | ❌ | The scope |
+| `state` | 🟠 | The state |
+
+🟠 Optional, but RECOMMENDED.
+
+### Response Type - Token
+
+| Parameter | Required | Value |
+| - | - | - |
+| `response_type` | ✔️ | `code` |
+| `client_id` | ✔️ | The client ID |
+| `redirect_uri` | ❌ | The redirect URI |
+| `scope` | ❌ | The scope |
+| `state` | 🟠 | The state |
+
+🟠 Optional, but RECOMMENDED.
 
 ## Token Endpoint
 
